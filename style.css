@@ -1,4 +1,4 @@
-/* Body Styling */
+
 body {
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -10,12 +10,10 @@ body {
   color: white;
 }
 
-/* Centering the Clock */
 .container {
   text-align: center;
 }
 
-/* Clock Design */
 .clock {
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
@@ -28,22 +26,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 10; /* Ensure clock is on top of the progress bar */
+  z-index: 10; 
 }
 
 #time {
   font-size: 3em;
   margin-top: 10px;
-  z-index: 20; /* Ensure time appears above the progress bar */
+  z-index: 20; 
 }
 
 #session {
   font-size: 1.5em;
   margin-bottom: 10px;
-  z-index: 20; /* Ensure session title appears above the progress bar */
+  z-index: 20; 
 }
 
-/* Button Styling */
 button {
   font-size: 1em;
   padding: 10px 20px;
@@ -54,7 +51,7 @@ button {
   color: white;
   cursor: pointer;
   transition: background 0.3s, box-shadow 0.3s;
-  z-index: 20; /* Ensure buttons appear above the progress bar */
+  z-index: 20; 
 }
 
 button:hover {
@@ -66,7 +63,6 @@ button:active {
   transform: scale(0.98);
 }
 
-/* Progress Bar */
 #progressCircle {
   position: absolute;
   top: 10px;
@@ -74,18 +70,16 @@ button:active {
   right: 10px;
   bottom: 10px;
   border-radius: 50%;
-  z-index: 5; /* Ensure the progress circle is behind the clock content */
+  z-index: 5; 
   border: 6px solid rgba(255, 255, 255, 0.2);
   background: transparent;
 }
 
-/* Styling for Controls */
 .controls {
   margin-top: 20px;
-  z-index: 20; /* Ensure controls appear above the progress bar */
+  z-index: 20; 
 }
 
-/* Animation */
 @keyframes pulse {
   0% {
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
