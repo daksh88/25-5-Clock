@@ -1,25 +1,88 @@
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    color: white;
+}
+
+/* Centering the Clock */
+.container {
     text-align: center;
-  }
-  
-  .clock {
-    margin-top: 50px;
-  }
-  
-  #time {
+}
+
+/* Clock Design */
+.clock {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+#time {
     font-size: 3em;
     margin-top: 20px;
-  }
-  
-  .controls {
-    margin-top: 20px;
-  }
-  
-  button {
+}
+
+#session {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
     font-size: 1em;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #74ebd5, #ACB6E5);
+    color: white;
     cursor: pointer;
-  }
-  
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #ACB6E5, #74ebd5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Progress Bar */
+#progressCircle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+/* Styling for Controls */
+.controls {
+    margin-top: 20px;
+}
+
+/* Animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    }
+    70% {
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
